@@ -6,6 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C061E59F2EDB202100233C43 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C061E59E2EDB202100233C43 /* FirebaseAnalytics */; };
+		C061E5A12EDB202100233C43 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C061E5A02EDB202100233C43 /* FirebaseAuth */; };
+		C061E5A32EDB202100233C43 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = C061E5A22EDB202100233C43 /* FirebaseCore */; };
+		C061E5A52EDB202100233C43 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C061E5A42EDB202100233C43 /* FirebaseFirestore */; };
+		C061E5A72EDB228500233C43 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = C061E5A62EDB228500233C43 /* FirebaseCrashlytics */; };
+		C061E6142EDCDE2F00233C43 /* maayyiz.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C061E60A2EDCDE2E00233C43 /* maayyiz.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		C05E42D52EC1203D00F3A26E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,17 +30,60 @@
 			remoteGlobalIDString = C05E42C62EC1203B00F3A26E;
 			remoteInfo = Mayyiz;
 		};
+		C061E6122EDCDE2F00233C43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C05E42BF2EC1203B00F3A26E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C061E6092EDCDE2E00233C43;
+			remoteInfo = maayyiz;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C061E6152EDCDE2F00233C43 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C061E6142EDCDE2F00233C43 /* maayyiz.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C05E42C72EC1203B00F3A26E /* Mayyiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mayyiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05E42D42EC1203D00F3A26E /* MayyizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayyizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05E42DE2EC1203D00F3A26E /* MayyizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayyizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C061E60A2EDCDE2E00233C43 /* maayyiz.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = maayyiz.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C061E5992EDB1D8000233C43 /* Exceptions for "Mayyiz" folder in "Mayyiz" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Assets.xcassets,
+				Info.plist,
+			);
+			target = C05E42C62EC1203B00F3A26E /* Mayyiz */;
+		};
+		C061E6192EDCDE2F00233C43 /* Exceptions for "maayyiz" folder in "maayyiz" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C061E6092EDCDE2E00233C43 /* maayyiz */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		C05E42C92EC1203B00F3A26E /* Mayyiz */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C061E5992EDB1D8000233C43 /* Exceptions for "Mayyiz" folder in "Mayyiz" target */,
+			);
 			path = Mayyiz;
 			sourceTree = "<group>";
 		};
@@ -45,6 +97,14 @@
 			path = MayyizUITests;
 			sourceTree = "<group>";
 		};
+		C061E60B2EDCDE2F00233C43 /* maayyiz */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C061E6192EDCDE2F00233C43 /* Exceptions for "maayyiz" folder in "maayyiz" target */,
+			);
+			path = maayyiz;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +112,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C061E59F2EDB202100233C43 /* FirebaseAnalytics in Frameworks */,
+				C061E5A52EDB202100233C43 /* FirebaseFirestore in Frameworks */,
+				C061E5A72EDB228500233C43 /* FirebaseCrashlytics in Frameworks */,
+				C061E5A32EDB202100233C43 /* FirebaseCore in Frameworks */,
+				C061E5A12EDB202100233C43 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +134,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C061E6072EDCDE2E00233C43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +150,8 @@
 				C05E42C92EC1203B00F3A26E /* Mayyiz */,
 				C05E42D72EC1203D00F3A26E /* MayyizTests */,
 				C05E42E12EC1203D00F3A26E /* MayyizUITests */,
+				C061E60B2EDCDE2F00233C43 /* maayyiz */,
+				C061E59D2EDB202100233C43 /* Frameworks */,
 				C05E42C82EC1203B00F3A26E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +162,16 @@
 				C05E42C72EC1203B00F3A26E /* Mayyiz.app */,
 				C05E42D42EC1203D00F3A26E /* MayyizTests.xctest */,
 				C05E42DE2EC1203D00F3A26E /* MayyizUITests.xctest */,
+				C061E60A2EDCDE2E00233C43 /* maayyiz.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C061E59D2EDB202100233C43 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,17 +183,24 @@
 			buildPhases = (
 				C05E42C32EC1203B00F3A26E /* Sources */,
 				C05E42C42EC1203B00F3A26E /* Frameworks */,
-				C05E42C52EC1203B00F3A26E /* Resources */,
+				C061E5982EDB1D8000233C43 /* Resources */,
+				C061E6152EDCDE2F00233C43 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C061E6132EDCDE2F00233C43 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				C05E42C92EC1203B00F3A26E /* Mayyiz */,
 			);
 			name = Mayyiz;
 			packageProductDependencies = (
+				C061E59E2EDB202100233C43 /* FirebaseAnalytics */,
+				C061E5A02EDB202100233C43 /* FirebaseAuth */,
+				C061E5A22EDB202100233C43 /* FirebaseCore */,
+				C061E5A42EDB202100233C43 /* FirebaseFirestore */,
+				C061E5A62EDB228500233C43 /* FirebaseCrashlytics */,
 			);
 			productName = Mayyiz;
 			productReference = C05E42C72EC1203B00F3A26E /* Mayyiz.app */;
@@ -163,6 +252,28 @@
 			productReference = C05E42DE2EC1203D00F3A26E /* MayyizUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C061E6092EDCDE2E00233C43 /* maayyiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C061E6182EDCDE2F00233C43 /* Build configuration list for PBXNativeTarget "maayyiz" */;
+			buildPhases = (
+				C061E6062EDCDE2E00233C43 /* Sources */,
+				C061E6072EDCDE2E00233C43 /* Frameworks */,
+				C061E6082EDCDE2E00233C43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C061E60B2EDCDE2F00233C43 /* maayyiz */,
+			);
+			name = maayyiz;
+			packageProductDependencies = (
+			);
+			productName = maayyiz;
+			productReference = C061E60A2EDCDE2E00233C43 /* maayyiz.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -170,7 +281,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 2600;
+				LastSwiftUpdateCheck = 2610;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					C05E42C62EC1203B00F3A26E = {
@@ -184,6 +295,9 @@
 						CreatedOnToolsVersion = 26.0.1;
 						TestTargetID = C05E42C62EC1203B00F3A26E;
 					};
+					C061E6092EDCDE2E00233C43 = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
 				};
 			};
 			buildConfigurationList = C05E42C22EC1203B00F3A26E /* Build configuration list for PBXProject "Mayyiz" */;
@@ -195,6 +309,9 @@
 			);
 			mainGroup = C05E42BE2EC1203B00F3A26E;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C061E59C2EDB1F8600233C43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C05E42C82EC1203B00F3A26E /* Products */;
 			projectDirPath = "";
@@ -203,18 +320,12 @@
 				C05E42C62EC1203B00F3A26E /* Mayyiz */,
 				C05E42D32EC1203D00F3A26E /* MayyizTests */,
 				C05E42DD2EC1203D00F3A26E /* MayyizUITests */,
+				C061E6092EDCDE2E00233C43 /* maayyiz */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C05E42C52EC1203B00F3A26E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C05E42D22EC1203D00F3A26E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,6 +334,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C05E42DC2EC1203D00F3A26E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C061E5982EDB1D8000233C43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C061E6082EDCDE2E00233C43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +378,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C061E6062EDCDE2E00233C43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +397,11 @@
 			isa = PBXTargetDependency;
 			target = C05E42C62EC1203B00F3A26E /* Mayyiz */;
 			targetProxy = C05E42DF2EC1203D00F3A26E /* PBXContainerItemProxy */;
+		};
+		C061E6132EDCDE2F00233C43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C061E6092EDCDE2E00233C43 /* maayyiz */;
+			targetProxy = C061E6122EDCDE2F00233C43 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -408,7 +545,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.6;
@@ -418,13 +555,14 @@
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Debug;
@@ -452,7 +590,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.6;
@@ -462,13 +600,14 @@
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = auto;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = 1;
 				XROS_DEPLOYMENT_TARGET = 26.0;
 			};
 			name = Release;
@@ -575,6 +714,67 @@
 			};
 			name = Release;
 		};
+		C061E6162EDCDE2F00233C43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LY8LHRDJ97;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = maayyiz/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = maayyiz;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BBola.Mayyiz.maayyiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C061E6172EDCDE2F00233C43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LY8LHRDJ97;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = maayyiz/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = maayyiz;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = BBola.Mayyiz.maayyiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -614,7 +814,55 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		C061E6182EDCDE2F00233C43 /* Build configuration list for PBXNativeTarget "maayyiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C061E6162EDCDE2F00233C43 /* Debug */,
+				C061E6172EDCDE2F00233C43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C061E59C2EDB1F8600233C43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.6.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C061E59E2EDB202100233C43 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C061E59C2EDB1F8600233C43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		C061E5A02EDB202100233C43 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C061E59C2EDB1F8600233C43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C061E5A22EDB202100233C43 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C061E59C2EDB1F8600233C43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		C061E5A42EDB202100233C43 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C061E59C2EDB1F8600233C43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		C061E5A62EDB228500233C43 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C061E59C2EDB1F8600233C43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C05E42BF2EC1203B00F3A26E /* Project object */;
 }

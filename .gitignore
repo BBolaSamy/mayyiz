@@ -1,0 +1,90 @@
+# Xcode
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+*.xcworkspace/xcuserdata/
+*.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+
+# User-specific files
+xcuserdata/
+*.xcuserstate
+*.xcuserdatad
+
+# Build products
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Swift Package Manager
+.swiftpm/
+.build/
+Packages/
+Package.pins
+Package.resolved
+
+# CocoaPods (if used)
+Pods/
+*.podspec
+Podfile.lock
+
+# Carthage (if used)
+Carthage/Build/
+
+# Firebase
+GoogleService-Info.plist
+google-services.json
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# App packaging
+*.ipa
+*.app.dSYM.zip
+
+# Provisioning profiles
+*.mobileprovision
+*.provisionprofile
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Code coverage
+*.gcda
+*.gcno
+
+# Backup files
+*~.nib
+*.swp
+*.bak
+*.tmp
+
+# IDE
+.vscode/
+.idea/
