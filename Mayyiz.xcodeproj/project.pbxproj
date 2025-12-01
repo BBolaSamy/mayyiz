@@ -12,7 +12,7 @@
 		C061E5A32EDB202100233C43 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = C061E5A22EDB202100233C43 /* FirebaseCore */; };
 		C061E5A52EDB202100233C43 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C061E5A42EDB202100233C43 /* FirebaseFirestore */; };
 		C061E5A72EDB228500233C43 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = C061E5A62EDB228500233C43 /* FirebaseCrashlytics */; };
-		C061E6142EDCDE2F00233C43 /* maayyiz.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C061E60A2EDCDE2E00233C43 /* maayyiz.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C061E62A2EDCE9C700233C43 /* app.share.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C061E6202EDCE9C700233C43 /* app.share.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,12 +30,12 @@
 			remoteGlobalIDString = C05E42C62EC1203B00F3A26E;
 			remoteInfo = Mayyiz;
 		};
-		C061E6122EDCDE2F00233C43 /* PBXContainerItemProxy */ = {
+		C061E6282EDCE9C700233C43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C05E42BF2EC1203B00F3A26E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C061E6092EDCDE2E00233C43;
-			remoteInfo = maayyiz;
+			remoteGlobalIDString = C061E61F2EDCE9C700233C43;
+			remoteInfo = app.share;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -46,7 +46,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				C061E6142EDCDE2F00233C43 /* maayyiz.appex in Embed Foundation Extensions */,
+				C061E62A2EDCE9C700233C43 /* app.share.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -57,7 +57,7 @@
 		C05E42C72EC1203B00F3A26E /* Mayyiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mayyiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05E42D42EC1203D00F3A26E /* MayyizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayyizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C05E42DE2EC1203D00F3A26E /* MayyizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MayyizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C061E60A2EDCDE2E00233C43 /* maayyiz.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = maayyiz.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C061E6202EDCE9C700233C43 /* app.share.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = app.share.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -69,12 +69,12 @@
 			);
 			target = C05E42C62EC1203B00F3A26E /* Mayyiz */;
 		};
-		C061E6192EDCDE2F00233C43 /* Exceptions for "maayyiz" folder in "maayyiz" target */ = {
+		C061E62E2EDCE9C700233C43 /* Exceptions for "app.share" folder in "app.share" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = C061E6092EDCDE2E00233C43 /* maayyiz */;
+			target = C061E61F2EDCE9C700233C43 /* app.share */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -99,10 +99,15 @@
 		};
 		C061E60B2EDCDE2F00233C43 /* maayyiz */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				C061E6192EDCDE2F00233C43 /* Exceptions for "maayyiz" folder in "maayyiz" target */,
-			);
 			path = maayyiz;
+			sourceTree = "<group>";
+		};
+		C061E6212EDCE9C700233C43 /* app.share */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C061E62E2EDCE9C700233C43 /* Exceptions for "app.share" folder in "app.share" target */,
+			);
+			path = app.share;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -134,7 +139,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C061E6072EDCDE2E00233C43 /* Frameworks */ = {
+		C061E61D2EDCE9C700233C43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -151,6 +156,7 @@
 				C05E42D72EC1203D00F3A26E /* MayyizTests */,
 				C05E42E12EC1203D00F3A26E /* MayyizUITests */,
 				C061E60B2EDCDE2F00233C43 /* maayyiz */,
+				C061E6212EDCE9C700233C43 /* app.share */,
 				C061E59D2EDB202100233C43 /* Frameworks */,
 				C05E42C82EC1203B00F3A26E /* Products */,
 			);
@@ -162,7 +168,7 @@
 				C05E42C72EC1203B00F3A26E /* Mayyiz.app */,
 				C05E42D42EC1203D00F3A26E /* MayyizTests.xctest */,
 				C05E42DE2EC1203D00F3A26E /* MayyizUITests.xctest */,
-				C061E60A2EDCDE2E00233C43 /* maayyiz.appex */,
+				C061E6202EDCE9C700233C43 /* app.share.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,7 +195,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				C061E6132EDCDE2F00233C43 /* PBXTargetDependency */,
+				C061E6292EDCE9C700233C43 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				C05E42C92EC1203B00F3A26E /* Mayyiz */,
@@ -252,26 +258,26 @@
 			productReference = C05E42DE2EC1203D00F3A26E /* MayyizUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		C061E6092EDCDE2E00233C43 /* maayyiz */ = {
+		C061E61F2EDCE9C700233C43 /* app.share */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C061E6182EDCDE2F00233C43 /* Build configuration list for PBXNativeTarget "maayyiz" */;
+			buildConfigurationList = C061E62B2EDCE9C700233C43 /* Build configuration list for PBXNativeTarget "app.share" */;
 			buildPhases = (
-				C061E6062EDCDE2E00233C43 /* Sources */,
-				C061E6072EDCDE2E00233C43 /* Frameworks */,
-				C061E6082EDCDE2E00233C43 /* Resources */,
+				C061E61C2EDCE9C700233C43 /* Sources */,
+				C061E61D2EDCE9C700233C43 /* Frameworks */,
+				C061E61E2EDCE9C700233C43 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				C061E60B2EDCDE2F00233C43 /* maayyiz */,
+				C061E6212EDCE9C700233C43 /* app.share */,
 			);
-			name = maayyiz;
+			name = app.share;
 			packageProductDependencies = (
 			);
-			productName = maayyiz;
-			productReference = C061E60A2EDCDE2E00233C43 /* maayyiz.appex */;
+			productName = app.share;
+			productReference = C061E6202EDCE9C700233C43 /* app.share.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -295,7 +301,7 @@
 						CreatedOnToolsVersion = 26.0.1;
 						TestTargetID = C05E42C62EC1203B00F3A26E;
 					};
-					C061E6092EDCDE2E00233C43 = {
+					C061E61F2EDCE9C700233C43 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
 				};
@@ -320,7 +326,7 @@
 				C05E42C62EC1203B00F3A26E /* Mayyiz */,
 				C05E42D32EC1203D00F3A26E /* MayyizTests */,
 				C05E42DD2EC1203D00F3A26E /* MayyizUITests */,
-				C061E6092EDCDE2E00233C43 /* maayyiz */,
+				C061E61F2EDCE9C700233C43 /* app.share */,
 			);
 		};
 /* End PBXProject section */
@@ -347,7 +353,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C061E6082EDCDE2E00233C43 /* Resources */ = {
+		C061E61E2EDCE9C700233C43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -378,7 +384,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C061E6062EDCDE2E00233C43 /* Sources */ = {
+		C061E61C2EDCE9C700233C43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -398,10 +404,10 @@
 			target = C05E42C62EC1203B00F3A26E /* Mayyiz */;
 			targetProxy = C05E42DF2EC1203D00F3A26E /* PBXContainerItemProxy */;
 		};
-		C061E6132EDCDE2F00233C43 /* PBXTargetDependency */ = {
+		C061E6292EDCE9C700233C43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C061E6092EDCDE2E00233C43 /* maayyiz */;
-			targetProxy = C061E6122EDCDE2F00233C43 /* PBXContainerItemProxy */;
+			target = C061E61F2EDCE9C700233C43 /* app.share */;
+			targetProxy = C061E6282EDCE9C700233C43 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -714,28 +720,32 @@
 			};
 			name = Release;
 		};
-		C061E6162EDCDE2F00233C43 /* Debug */ = {
+		C061E62C2EDCE9C700233C43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LY8LHRDJ97;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = maayyiz/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = maayyiz;
+				INFOPLIST_FILE = app.share/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = app.share;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = BBola.Mayyiz.maayyiz;
+				PRODUCT_BUNDLE_IDENTIFIER = "BBola.Mayyiz.app-share";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -744,28 +754,32 @@
 			};
 			name = Debug;
 		};
-		C061E6172EDCDE2F00233C43 /* Release */ = {
+		C061E62D2EDCE9C700233C43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LY8LHRDJ97;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = maayyiz/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = maayyiz;
+				INFOPLIST_FILE = app.share/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = app.share;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = BBola.Mayyiz.maayyiz;
+				PRODUCT_BUNDLE_IDENTIFIER = "BBola.Mayyiz.app-share";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
@@ -814,11 +828,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C061E6182EDCDE2F00233C43 /* Build configuration list for PBXNativeTarget "maayyiz" */ = {
+		C061E62B2EDCE9C700233C43 /* Build configuration list for PBXNativeTarget "app.share" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C061E6162EDCDE2F00233C43 /* Debug */,
-				C061E6172EDCDE2F00233C43 /* Release */,
+				C061E62C2EDCE9C700233C43 /* Debug */,
+				C061E62D2EDCE9C700233C43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

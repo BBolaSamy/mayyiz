@@ -52,6 +52,22 @@ struct IdleView: View {
                             .cornerRadius(12)
                     }
                     
+                    NavigationLink(destination: ShareExtensionTestView()) {
+                        Label("Test Share Extension", systemImage: "square.and.arrow.up")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(
+                                LinearGradient(
+                                    colors: [.green, .teal],
+                                    startPoint: .leading,
+                                    endPoint: .trailing
+                                )
+                            )
+                            .cornerRadius(12)
+                    }
+                    
                     Button(action: {
                         appViewModel.goToDashboard()
                     }) {
